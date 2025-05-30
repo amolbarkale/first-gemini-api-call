@@ -1,1 +1,5 @@
 React library for LLMs: https://llm-ui.com/?ref=dailydev
+
+
+Building AI apps is hard. It's easier when they're fast & accurate.
+https://redis.io/redis-for-ai/?utm_source=daily-dev&utm_medium=cpa&utm_campaign=ai_in_production&utm_content=daily-dev-newsletter
