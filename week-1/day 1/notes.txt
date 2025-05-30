@@ -1,26 +1,47 @@
-1] Difference between AI engineer
+Lecture Summary
 
-1. AI engineer:
+Overview of the Lecture
+The lecture titled "Welcome to MisogiAI" focuses on introducing students to the foundational concepts in AI engineering, large language models (LLMs), OpenAI APIs, and various prompting techniques. The session aims to clarify common misconceptions about roles in AI, explain the basics of LLMs, demonstrate usage of OpenAI APIs, and discuss practical approaches for interacting with LLMs through prompting and parameter tuning.
 
-Engineer who will use already ready to use AI models
-
-2. AI researcher:
-
-researcher who creates models and make it open for others so that they can use it
-
-3. ML:
-
-2] Basics of LLM
-
-3] Different models of OpenAI
-
-4] Calling OpenAI API
-
-5] Prompting
-
-6] Different Tweaks
-
-
-presence penalty: 
-
-frequency penalty: 
+Understanding AI Roles: AI Engineer, AI Researcher, ML Engineer, and Data Scientist
+AI Engineer: Uses existing AI technologies and models (like LLMs) to build applications that people can use. They do not train models from scratch but may fine-tune and integrate them into products.
+AI Researcher / ML Engineer: They focus on creating, training, and improving new AI models or algorithms. Building LLMs from raw data falls under their scope.
+Data Scientist: Often overlaps with AI/ML but is more involved with extracting business insights and making data-driven decisions using AI and ML tools.
+Example Explanation: The AI engineer builds applications such as meeting transcription or trip planning apps using AI models trained by researchers. The data scientist might decide whether to launch a particular feature based on statistical analysis.
+Basics of Large Language Models (LLMs)
+Definition: LLMs are models trained on vast amounts of text data from books, internet, blogs, etc., to predict the next token in a sequence based on context.
+Token Explanation: Tokens are chunks of text (not exactly words but smaller units) that models work with mathematically, enabling operations like 'king - man + woman = queen.'
+Core Function: Think of LLMs as "autocomplete on steroids," predicting text one token at a time based on context.
+Key Paper: "Attention Is All You Need" (2017) introduced the Transformer architecture that underpins most modern LLMs.
+Context Awareness: LLMs consider the entire input context to generate coherent responses within a limited context window.
+Knowledge Cutoff: Models have a cutoff date up to which their training data is valid (e.g., June 2024). They cannot generate information past this cutoff without internet access.
+OpenAI API: Usage and Key Concepts
+API Overview: OpenAI provides APIs to interact with models like GPT-3.5, GPT-4, etc. These APIs require a model name and a messages array consisting of roles and content.
+Roles:
+system: Instructions guiding the assistant's behavior (e.g., "You are a helpful assistant").
+user: The actual human user's query.
+assistant: The AI's response.
+API Settings and Response:
+You can pass optional parameters like max_tokens (to limit output length), stop sequences (to halt completion on specific tokens), and temperature (controls randomness/creativity).
+The response payload includes details like the reason for stopping, content, role, and token usage which affects API cost.
+Code Example: Python and JavaScript examples show how to call the API, set roles, and parse responses.
+Prompting Techniques
+Role-based Prompting: Assign roles in the prompt to shape the style or behavior of the AI (like asking it to act as a teacher or a rude character).
+Zero-shot Prompting: Asking questions or commands directly, without examples.
+Few-shot Prompting: Giving examples in the prompt to guide the model’s output style or format; useful when zero-shot doesn’t yield desired results but increases token usage and cost.
+Chain-of-Thought Prompting: Asking the model to explain its reasoning step-by-step; useful for complex problem-solving and agent behavior.
+Structured Prompting: Requesting output in specific formats (like JSON) to facilitate easier parsing and integration into applications.
+Important Parameters and Tweaks in API Calls
+Temperature (0 to 2): Controls creativity vs. predictability. Lower values yield more deterministic outputs; higher values produce more creative or random responses.
+Max Tokens: Limits how many tokens the model generates in the output.
+Stop Sequence: Specifies strings that, when encountered, cause the API to stop generating further text.
+Frequency Penalty (-2 to +2): Controls repetition of words. Higher penalty reduces repeated words; negative encourages repetition.
+Presence Penalty (-2 to +2): Controls repetition of ideas. Higher penalty encourages diverse ideas; negative tolerates reiteration.
+Summary Recap
+AI engineers build applications using AI research output but don’t build LLMs themselves.
+LLMs work by predicting the next token based on context, where tokens are chunks of text mathematically represented.
+The OpenAI API interaction involves passing model, message roles, and optional parameters to get AI-generated text.
+Different prompting techniques influence how the model responds, including role-based, few-shot, chain-of-thought, and structured prompts.
+API parameters such as temperature, max tokens, stop sequences, and penalties let developers customize AI output for creativity, length, and diversity.
+Knowing the knowledge cutoff and context window size is crucial for effective API usage.
+The lecture concludes with an encouragement to complete assignments promptly and remain enthusiastic about the evolving AI landscape, highlighting that this foundational knowledge sets the stage for more advanced work ahead.
