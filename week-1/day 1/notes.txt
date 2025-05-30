@@ -1,0 +1,26 @@
+1] Difference between AI engineer
+
+1. AI engineer:
+
+Engineer who will use already ready to use AI models
+
+2. AI researcher:
+
+researcher who creates models and make it open for others so that they can use it
+
+3. ML:
+
+2] Basics of LLM
+
+3] Different models of OpenAI
+
+4] Calling OpenAI API
+
+5] Prompting
+
+6] Different Tweaks
+
+
+presence penalty: 
+
+frequency penalty: 
