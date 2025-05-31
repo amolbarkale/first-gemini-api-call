@@ -14,3 +14,13 @@ OpenAI compare models
 https://platform.openai.com/docs/models/compare
 
 gemini user guide for API: https://cloud.google.com/vertex-ai/generative-ai/docs/learn/prompts/system-instructions
+
+Flow recommendation by Cursor:
+https://docs.cursor.com/guides/selecting-models
+https://docs.cursor.com/context/max-mode
+
+Better AI prompt techniques:
+https://github.com/anthropics/prompt-eng-interactive-tutorial
+
+Structured API response from AI:
+https://python.langchain.com/docs/how_to/structured_output/
